@@ -1,0 +1,23 @@
+{
+  "name": "paper-writer-from-proposal",
+  "description": "从科研申报书到学术论文的完整工作流：文献调研 → Zotero写入 → 论文撰写 → Word排版",
+  "version": "1.0.0",
+  "author": "Claude Code",
+  "tags": ["学术写作", "文献管理", "论文撰写", "Zotero", "数字人文"],
+  "entrypoint": "README.md",
+  "scripts": [
+    "scripts/search_cnki.py",
+    "scripts/write_zotero.py",
+    "scripts/build_paper.py"
+  ],
+  "requirements": [
+    "pyzotero>=1.5.0",
+    "requests>=2.28.0",
+    "python-docx>=0.8.0"
+  ],
+  "env_vars": [
+    "ZOTERO_LIBRARY_ID",
+    "ZOTERO_LIBRARY_TYPE",
+    "ZOTERO_API_KEY"
+  ]
+}
