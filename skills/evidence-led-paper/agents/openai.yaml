@@ -1,0 +1,4 @@
+interface:
+  display_name: "证据驱动论文写作"
+  short_description: "统筹学术论文材料核验、论证设计、分轮修订与投稿文档验收的可复用流程"
+  default_prompt: "使用 $evidence-led-paper，根据我提供的论文和材料识别当前阶段，按证据驱动流程推进并报告核验状态。"
